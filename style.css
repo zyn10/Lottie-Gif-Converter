@@ -1,0 +1,92 @@
+/* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #1e293b;
+}
+
+.container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* File Upload Input */
+input[type="file"] {
+  display: none; /* Hide default file input */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  background-color: #2563eb; /* Professional blue */
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.custom-file-upload:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.custom-file-upload:active {
+  transform: translateY(0);
+}
+
+/* Status Message */
+.status-message {
+  font-size: 0.9rem;
+  color: #2563eb; /* Blue for status messages */
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #dbeafe; /* Light blue background */
+  border-radius: 6px;
+  display: none; /* Hidden by default */
+}
+
+.status-message.error {
+  color: #dc2626; /* Red for errors */
+  background-color: #fee2e2; /* Light red background */
+}
+
+/* Animation Container */
+#animationContainer {
+  width: 512px;
+  height: 512px;
+  margin: 1.5rem auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}

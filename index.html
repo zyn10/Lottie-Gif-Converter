@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottie JSON to GIF Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lottie JSON to GIF Converter</h1>
+      <p>Upload a Lottie JSON file to convert it into a GIF.</p>
+
+      <!-- File Upload Input -->
+      <label for="jsonFileInput" class="custom-file-upload">
+        Upload JSON File
+      </label>
+      <input type="file" id="jsonFileInput" accept=".json" />
+
+      <!-- Status Message -->
+      <p id="statusMessage" class="status-message"></p>
+
+      <!-- Canvas for Rendering Lottie Animation -->
+      <div id="animationContainer"></div>
+    </div>
+
+    <!-- Include Lottie and GIF.js Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gif.js/0.2.0/gif.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
